@@ -1,8 +1,19 @@
+# Another Sample Using React + Redux + ImmutableJS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Description
+
+Another sample project to study React + Redux + ImmutableJS.<br>
+Also using router.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all modules used.
 
 ### `yarn start`
 
