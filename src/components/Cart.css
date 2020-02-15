@@ -1,0 +1,64 @@
+.cart-panel {
+    /*background-color: pink;*/
+    height: 100%;
+}
+.cart-main {
+    /*background-color: lightsalmon;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.order-panel {
+    background-color: white;
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+}
+.order-panel table {
+    background-color: #aaa;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+td, th {
+    background-color: white;
+    padding: 2px;
+    font-size: 0.9em;
+}
+td input {
+    border: 1px solid #fff;
+}
+
+td.quantity {
+    text-align: center;
+}
+.price {
+    text-align: right;
+}
+td.grand-total-name {
+    text-align: right;
+    font-weight: 700;
+}
+td.grand-total-price {
+    text-align: right;
+    font-weight: 700;
+}
+td.action {
+    text-align: center;
+}
+td.action span {
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+td.action span:hover {
+    color: #d00;
+}
+td.order-empty {
+    text-align: center;
+    height: 150px;
+}

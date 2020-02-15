@@ -1,0 +1,214 @@
+body {
+  background-color: #efefef;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: #9c3;/*#596273;*/ /*#282c34;*/
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 75px;
+}
+main {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  width: 100%;
+  height: calc(100% - 75px);
+}
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h4.main-panel-title {
+  padding: 10px 10px 0px 10px;
+}
+
+h5 {
+  margin: 0px;
+  padding: 2px;
+}
+
+h5.subcategory {
+  margin: 0px;
+  padding: 2px 2px 10px 2px;
+}
+h5.subcategory::before {
+  content: "・"
+}
+
+h6 {
+  margin: 0px;
+  padding: 2px;
+}
+h6::before {
+  content: "・"
+}
+
+h1.site-title {
+  background-color: #9c3;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0px 5px 10px;
+  margin: 0px;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+ul.topNav {
+  position: absolute;
+  left: 0px;
+  bottom: 1px;
+  width: calc(100% - 5px);
+  background-color: #cce699;
+  margin: 0px;
+  padding: 5px 0px 5px 5px;
+}
+
+ul.topNav li {
+  display: inline-block;
+  padding: 0px 2px;
+  margin: 0px;
+  color: darkorange;
+}
+
+ul.topNav li::before {
+  content: "| ";
+}
+
+ul.topNav li:first-child::before {
+  content: "";
+}
+ul.topNav li a{
+  color: darkorange;
+}
+ul.topNav li.selected a{
+  text-decoration: none;
+  color: maroon;
+}
+
+.category {
+  margin: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.item {
+  margin: 2px;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+p.desc {
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* shop */
+
+.left-panel {
+  background-color: #6f7a90;
+  position: relative;
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.main-panel {
+  background-color: white;
+  position: relative;
+  width: calc(100% - 150px);
+  height: 100%;
+  display: inline-block;
+}
+
+ul.left-category {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px 0px 0px 10px;
+}
+ul.left-category li {
+  color: white;
+  padding-bottom: 5px;
+}
+
+ul.left-subcategory {
+  list-style-type: disc;
+}
+ul.left-subcategory li {
+  text-decoration: underline;
+  cursor: pointer;
+  color: darkorange;
+  padding-bottom: 1px;
+}
+ul.left-subcategory li a {
+  color: darkorange;
+}
+ul.left-subcategory li.selected {
+  text-decoration: none;
+  cursor: default;
+  color: maroon;
+}
+ul.left-subcategory li.selected a {
+  text-decoration: none;
+  cursor: default;
+  color: maroon;
+}
